@@ -7,13 +7,15 @@ import { AppComponent } from "./app.component";
 import { ListOfReceiptsComponent } from "./main/list-of-receipts/list-of-receipts.component";
 import { FooterComponent } from "./footer/footer.component";
 import { NavbarComponent } from "./navbar/navbar.component";
+import { HomeComponent } from "./main/home/home.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     ListOfReceiptsComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
