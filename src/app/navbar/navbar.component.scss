@@ -1,0 +1,16 @@
+nav .brand-logo img {
+  height: 40px;
+  margin-top: 13px;
+}
+
+//Text Farbe
+nav ul a {
+  color: #47525e;
+}
+
+.active {
+  background-color: #19487c !important;
+  a {
+    color: #fff !important;
+  }
+}

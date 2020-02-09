@@ -1,0 +1,36 @@
+<div class="navbar">
+  <nav class="nav-wrapper white">
+    <div class="container">
+      <a class="center brand-logo"
+        ><img src="/assets/img/logo/logo.svg" alt="Logo"
+      /></a>
+      <ul class="hide-on-med-and-down margin-left-60">
+        <li
+          class="waves-effect"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <a routerLink="/">Home</a>
+        </li>
+        <li class="waves-effect" routerLinkActive="active">
+          <a routerLink="/list">My Receipts</a>
+        </li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li class="waves-effect">
+          <a>Login</a>
+        </li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger right">
+        <i class="material-icons black-text">menu</i>
+      </a>
+    </div>
+  </nav>
+</div>
+
+<ul class="sidenav" id="slide-out">
+  <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+    <a routerLink="/">Home</a>
+  </li>
+  <li routerLinkActive="active"><a routerLink="/list">My Receipts</a></li>
+</ul>
