@@ -1,19 +1,13 @@
 <div class="navbar">
-  <nav class="nav-wrapper white">
+  <nav class="nav-wrapper green">
     <div class="container">
-      <a class="center brand-logo"
-        ><img src="/assets/img/logo/logo.svg" alt="Logo"
-      /></a>
       <ul class="hide-on-med-and-down margin-left-60">
-        <li
-          class="waves-effect"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-        >
-          <a routerLink="/">Home</a>
+        <li class="hide"><i class="material-icons">turned_in_not</i></li>
+        <li class="waves-effect" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a routerLink="/">Overview</a>
         </li>
         <li class="waves-effect" routerLinkActive="active">
-          <a routerLink="/list">My Receipts</a>
+          <a routerLink="/list">Receipts</a>
         </li>
       </ul>
       <ul class="right hide-on-med-and-down">
@@ -22,7 +16,7 @@
         </li>
       </ul>
       <a href="#" data-target="slide-out" class="sidenav-trigger right">
-        <i class="material-icons black-text">menu</i>
+        <i class="material-icons white-text">menu</i>
       </a>
     </div>
   </nav>

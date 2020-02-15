@@ -8,9 +8,9 @@ declare var M: any;
 })
 export class NavbarComponent implements OnInit, AfterViewInit {
   hideNav = false;
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   ngAfterViewInit() {
     const optionsSidenav = { edge: "right" };
