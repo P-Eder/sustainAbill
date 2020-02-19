@@ -9,26 +9,12 @@
         <h4>Reciepts</h4>
         <table>
           <tbody>
-            <tr>
+            <tr *ngFor="let reciepts of listOfReciepts">
               <td>
-                <h6>17 JAN</h6>
+                <h6>{{ reciepts.date }}</h6>
               </td>
-              <td>Rewe</td>
-              <td>19.45€</td>
-            </tr>
-            <tr>
-              <td>
-                <h6>20 JAN</h6>
-              </td>
-              <td>Coffee</td>
-              <td>2.50€</td>
-            </tr>
-            <tr>
-              <td>
-                <h6>05 FEB</h6>
-              </td>
-              <td>Bakery</td>
-              <td>5.10€</td>
+              <td>{{ reciepts.shop }}</td>
+              <td>{{ reciepts.price }}</td>
             </tr>
           </tbody>
         </table>
