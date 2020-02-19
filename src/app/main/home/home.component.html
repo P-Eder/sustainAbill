@@ -3,16 +3,14 @@
     <div class="col s12 m7">
       <div>
         <h4>Gratulation!</h4>
-        <p>You saved your first 3 paper bills!</p>
+        <p>You saved your first 8 paper bills!</p>
       </div>
       <div class="card-panel white">
         <h4>Reciepts</h4>
         <table>
           <tbody>
             <tr *ngFor="let reciepts of listOfReciepts">
-              <td>
-                <h6>{{ reciepts.date }}</h6>
-              </td>
+              <td> {{ reciepts.date }} </td>
               <td>{{ reciepts.shop }}</td>
               <td>{{ reciepts.price }}</td>
             </tr>

@@ -36,6 +36,24 @@ export class HomeComponent implements OnInit {
     "shop": "IBM Coffee",
     "price": "1,50 EUR",
     "items": ["Coffe 1", "Coffe 2"]
+  },
+  {
+    "date": "19 FEB",
+    "shop": "REWE",
+    "price": "15,95 EUR",
+    "items": ["Coffe 1", "Coffe 2"]
+  },
+  {
+    "date": "19 FEB",
+    "shop": "IBM Coffee",
+    "price": "1,50 EUR",
+    "items": ["Coffe 1", "Coffe 2"]
+  },
+  {
+    "date": "18 FEB",
+    "shop": "Irish Pub",
+    "price": "12,00 EUR",
+    "items": ["Coffe 1", "Coffe 2"]
   }
   ];
 
