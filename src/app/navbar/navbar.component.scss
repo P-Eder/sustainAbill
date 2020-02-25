@@ -1,17 +1,13 @@
-.brand-logo {
-  padding-left: 13px;
-  padding-right: 13px;
+nav {
+  box-shadow: 0;
+  height: 100px;
 }
 
-//Text Farbe
-nav ul a {
-  color: #fff;
+.nav-wrapper {
+  box-shadow: 0;
+  height: 150px;
 }
 
-.active {
-  background-color: #F3F4F2 !important;
-
-  a {
-    color: #47525e !important;
-  }
+.menu {
+  font-weight: 100
 }

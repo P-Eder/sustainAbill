@@ -1,25 +1,30 @@
-<div class="container">
+<img src="\assets\img\background\background.png" class="responsive-img">
+
+<div class="container white">
   <div class="row">
-    <div class="col s12 m7">
+    <div class="col s12 m9">
       <div>
-        <h4>Gratulation!</h4>
-        <p>You saved your first {{sumTotalReciepts}} paper bills!</p>
-      </div>
-      <div class="card-panel white">
         <h4>Reciepts</h4>
         <table>
+          <thead>
+            <td>Date</td>
+            <td>Shop</td>
+            <td>Category</td>
+            <td>Spending</td>
+          </thead>
           <tbody>
             <tr *ngFor="let reciepts of listOfReciepts">
               <td> {{ reciepts.date }} </td>
               <td>{{ reciepts.shop }}</td>
-              <td>{{ reciepts.price }}</td>
+              <td>{{ reciepts.category }}</td>
+              <td>{{ reciepts.spending }}</td>
             </tr>
           </tbody>
         </table>
 
       </div>
     </div>
-    <div class="col s12 m5">
+    <div class="col s12 m3">
       <p class="margin">Some Content</p>
       <p class="margin">Some Content</p>
       <p class="margin">Some Content</p>
