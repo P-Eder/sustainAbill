@@ -1,6 +1,6 @@
 nav {
   box-shadow: 0;
-  height: 100px;
+  height: 200px;
 }
 
 .nav-wrapper {
@@ -8,10 +8,11 @@ nav {
   height: 150px;
 }
 
-.menu {
-  font-weight: 100
-}
-
 .profil {
   max-height: 70px;
+  float: right;
+}
+
+h4 {
+  display: inline-block;
 }

@@ -1,19 +1,31 @@
-.margin {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-}
-
-
 img {
   width: 100%;
 }
 
-tr {
-  font-weight: 100;
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid #F5F5F5
 }
 
-thead {
-  font-weight: bold;
+
+
+#content {
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+  .col {
+    padding: 0px;
+  }
+
+  thead {
+    font-weight: bold;
+  }
+
+  tr {
+    height: 60px;
+  }
 }
