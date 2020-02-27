@@ -1,43 +1,35 @@
 <!-- Background image Todo: funktioniert noch nicht-->
-<div class="image">
+<div id="background-img" class="image">
   <img src="\assets\img\background\background.png" alt="">
 </div>
 
 
 <!-- Row with facts -->
-<div class="container">
-  <div class="row white-text overlap">
-    <div class="col s12 l4 center">
-      <h5>
-        My Paper Savings
-      </h5>
-    </div>
-    <div class="col s12 l4 center">
-      <h5>
-        sustainAbill Paper Savings
-      </h5>
-    </div>
-    <div class="col s12 l4 center">
-      <h5>
-        sustainAbill CO2 Savings
-      </h5>
-    </div>
-  </div>
+<div id="facts" class="container">
   <div class="row white-text">
     <div class="col s12 l4 center">
-      <h5>
+      <h3 class="factheadline">
+        My Paper Savings
+      </h3>
+      <h2 class="fact">
         1,7 m
-      </h5>
+      </h2>
     </div>
     <div class="col s12 l4 center">
-      <h5>
+      <h3 class="factheadline">
+        sustainAbill Paper Savings
+      </h3>
+      <h2 class="fact">
         234,12 km
-      </h5>
+      </h2>
     </div>
     <div class="col s12 l4 center">
-      <h5>
+      <h3 class="factheadline">
+        sustainAbill CO2 Savings
+      </h3>
+      <h2 class="fact">
         120,12 t
-      </h5>
+      </h2>
     </div>
   </div>
 </div>
@@ -45,44 +37,64 @@
 
 <!-- Start of White Container with table -->
 <div id="content" class="container white ">
-  <div class="row overlap">
-    <div class="col s12 m10">
-      <h5 class="green-text">My Reciepts</h5>
+  <!--Nav over the table-->
+  <div id="content-header" class="row row-v-align">
+    <div class="col s12 m6">
+      <h4 class="green-text">My Reciepts</h4>
     </div>
-    <div class="hide-on-small-and-down col m2">
-      <h5 class="btn white right green-text">My Reciepts</h5>
+    <div class="col m6 hide-on-small-and-down ">
+      <a href="#" class="right green-text">
+        <h5>Details</h5>
+      </a>
     </div>
   </div>
-  <hr>
-  <div class="row">
-    <div class="col s12 l8">
-      <div>
-        <table class="striped">
-          <thead>
-            <td>Date</td>
-            <td>Shop</td>
-            <td>Category</td>
-            <td>Spending</td>
-          </thead>
-          <tbody>
-            <tr *ngFor="let reciepts of listOfReciepts">
-              <td> {{ reciepts.date }} </td>
-              <td>{{ reciepts.shop }}</td>
-              <td>{{ reciepts.category }}</td>
-              <td>{{ reciepts.spending }}</td>
-            </tr>
-          </tbody>
-        </table>
 
+  <!--Table and content on the right-->
+  <div id="content-body">
+    <hr>
+    <div class="row">
+      <!-- table -->
+      <div id="content-table" class="col s12 l8">
+        <div>
+          <table class="striped">
+            <thead>
+              <td>
+                <h5>Date</h5>
+              </td>
+              <td>
+                <h5>Shop</h5>
+              </td>
+              <td>
+                <h5>Category</h5>
+              </td>
+              <td>
+                <h5>Spending</h5>
+              </td>
+            </thead>
+            <tbody>
+              <tr *ngFor="let reciepts of listOfReciepts">
+                <td>
+                  {{ reciepts.date }}
+                </td>
+                <td>{{ reciepts.shop }}</td>
+                <td>{{ reciepts.category }}</td>
+                <td>{{ reciepts.spending }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- content on the right -->
+      <div id="content-stats" class="col s12 l4">
+        <h4 class="green-text center">Spendings</h4>
+        <hr class="side">
+        <img id="stats" src="\assets\img\stats.png" alt="">
+        <h4 class="green-text center">CO2 Saving Tip</h4>
+        <hr class="side">
+        <p>Choose products without packaging or with recyclable packaging at the grocery store to reduce your Carbon
+          Footprint even more.</p>
       </div>
     </div>
-    <div class="col s12 l4">
-      <h5 class="green-text">Spendings By Category</h5>
-      <hr class="side">
-      <p>Diagramm</p>
-      <h5 class="green-text">SustainAbill CO2 Saving Tip</h5>
-      <hr class="side">
-      <p>Diagramm</p>
-    </div>
   </div>
+
 </div>
