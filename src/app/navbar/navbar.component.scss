@@ -1,6 +1,14 @@
 nav {
   box-shadow: 0;
-  height: 200px;
+
+
+  padding-top: 50px;
+  padding-bottom: 130px;
+
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .profil {
@@ -8,6 +16,10 @@ nav {
   float: right;
 }
 
-h4 {
-  display: inline-block;
+.row-v-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }

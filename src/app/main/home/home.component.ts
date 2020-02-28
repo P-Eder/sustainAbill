@@ -6,71 +6,90 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
-
   listOfReciepts = [{
+    time: new Date("2020-01-14"),
     date: "14 JAN",
-    shop: "Bakery",
-    category: "Grocery",
-    spending: "12,30 EUR",
-    items: ["Coffe 1", "Coffe 2"]
+    shop: "Aldi",
+    category: "Supermarket",
+    spending: "17,50 EUR"
   },
   {
-    date: "14 JAN",
-    shop: "IBM Coffee",
-    spending: "1,50 EUR",
-    items: ["Coffe 1", "Coffe 2"]
-  },
-  {
+    time: new Date("2020-01-18"),
     date: "18 JAN",
     shop: "IBM Coffee",
-    spending: "1,50 EUR",
-    items: ["Coffe 1", "Coffe 2"]
+    category: "Cafe",
+    spending: "1,50 EUR"
   },
   {
+    time: new Date("2020-01-23"),
     date: "23 JAN",
     shop: "IBM Coffee",
-    spending: "1,50 EUR",
-    items: ["Coffe 1", "Coffe 2"]
+    category: "Cafe",
+    spending: "1,50 EUR"
   },
   {
-    date: "18 FEB",
+    time: new Date("2020-02-17"),
+    date: "17 FEB",
     shop: "IBM Coffee",
-    spending: "1,50 EUR",
-    items: ["Coffe 1", "Coffe 2"]
+    category: "Cafe",
+    spending: "1,50 EUR"
   },
   {
+    time: new Date("2020-02-19"),
     date: "19 FEB",
     shop: "REWE",
-    spending: "15, 95 EUR",
-    items: ["Coffe 1", "Coffe 2"]
+    category: "Supermarket",
+    spending: "15, 95 EUR"
   },
   {
+    time: new Date("2020-02-19"),
     date: "19 FEB",
     shop: "IBM Coffee",
+    category: "Cafe",
     spending: "1,50 EUR",
-    items: ["Coffe 1", "Coffe 2"]
   },
   {
+    time: new Date("2020-02-18"),
     date: "18 FEB",
     shop: "Irish Pub",
-    spending: "12,00 EUR",
-    items: ["Coffe 1", "Coffe 2"]
+    category: "Bar",
+    spending: "12,00 EUR"
   },
   {
+    time: new Date("2020-02-18"),
     date: "18 FEB",
     shop: "Irish Pub",
-    spending: "12,00 EUR",
-    items: ["Coffe 1", "Coffe 2"]
+    category: "Bar",
+    spending: "12,00 EUR"
   }
   ];
 
-  sumTotalReciepts = this.listOfReciepts.length * 10;
+  newreceipt = {
+    time: new Date("2020-02-28"),
+    date: "28 FEB",
+    shop: "IBM Coffee",
+    category: "Cafe",
+    spending: "1,50 EUR"
+  };
+
+  sortedlistOfReciepts = this.listOfReciepts.sort((a, b) => b.time.getTime() - a.time.getTime());
+
+  sumTotalReciepts = this.listOfReciepts.length * 0.2;
+
+  constructor() {
 
 
-
-  constructor() { }
-
-  ngOnInit() {
+    // Get Space input and create new receipt
+    window.addEventListener("keydown", e => {
+      if (e.keyCode === 32 && e.target === document.body) {
+        // prevent space key from scrolling
+        e.preventDefault();
+        // create new data
+        this.sortedlistOfReciepts.push(this.newreceipt);
+        this.sortedlistOfReciepts.sort((a, b) => b.time.getTime() - a.time.getTime());
+        this.sumTotalReciepts = this.listOfReciepts.length * 0.2;
+      }
+    });
   }
-
+  ngOnInit() { }
 }

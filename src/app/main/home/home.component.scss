@@ -1,7 +1,10 @@
 #background-img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  overflow: hidden;
+
   img {
-    position: absolute;
-    z-index: -1;
     min-width: 100%;
     height: 450px;
   }
@@ -29,6 +32,8 @@
 #content {
   padding: 20px;
   padding-top: 40px;
+  box-shadow: 0px 3px 25px rgb(0, 0, 0, 0.15);
+
 
   #content-header {
     .row-v-align {}
@@ -53,30 +58,30 @@
 
     #content-body {
 
+      hr {
+        color: #F5F5F5;
+      }
 
-      #content {
+      padding-top: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 30px;
 
-        padding-top: 40px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 30px;
-
-        #content-table {
-          .col {
-            padding: 0px;
-          }
-
-          thead {
-            font-weight: bold;
-          }
-
-          tr {
-            height: 60px;
-          }
+      #content-table {
+        .col {
+          padding: 0px;
         }
 
-        #content-stats {}
+        thead {
+          font-weight: bold;
+        }
+
+        tr {
+          height: 60px;
+        }
       }
+
+      #content-stats {}
     }
   }
 }

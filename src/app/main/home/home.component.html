@@ -1,5 +1,5 @@
 <!-- Background image Todo: funktioniert noch nicht-->
-<div id="background-img" class="image">
+<div id="background-img">
   <img src="\assets\img\background\background.png" alt="">
 </div>
 
@@ -12,7 +12,7 @@
         My Paper Savings
       </h3>
       <h2 class="fact">
-        1,7 m
+        {{sumTotalReciepts}} m
       </h2>
     </div>
     <div class="col s12 l4 center">
@@ -72,7 +72,7 @@
               </td>
             </thead>
             <tbody>
-              <tr *ngFor="let reciepts of listOfReciepts">
+              <tr *ngFor="let reciepts of sortedlistOfReciepts">
                 <td>
                   {{ reciepts.date }}
                 </td>
