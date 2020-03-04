@@ -8,6 +8,7 @@ import { ListOfReceiptsComponent } from "./main/list-of-receipts/list-of-receipt
 import { FooterComponent } from "./footer/footer.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { HomeComponent } from "./main/home/home.component";
+import { InfoboxComponent } from './main/infobox/infobox.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HomeComponent } from "./main/home/home.component";
     ListOfReceiptsComponent,
     FooterComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    InfoboxComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

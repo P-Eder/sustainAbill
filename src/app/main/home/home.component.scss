@@ -6,13 +6,14 @@
 
   img {
     min-width: 100%;
-    height: 450px;
+    height: 350px;
   }
 }
 
 
 #facts {
-  padding: 120px 0;
+  padding-top: 100px;
+  padding-bottom: 30px;
   font-weight: lighter;
 
   .factheadline {
@@ -88,4 +89,8 @@
 
 #stats {
   max-width: 100%;
+}
+
+.toast {
+  background-color: #83AA5C;
 }

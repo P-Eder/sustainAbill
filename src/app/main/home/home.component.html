@@ -17,7 +17,7 @@
     </div>
     <div class="col s12 l4 center">
       <h3 class="factheadline">
-        sustainAbill Paper Savings
+        Paper Savings
       </h3>
       <h2 class="fact">
         234,12 km
@@ -25,7 +25,7 @@
     </div>
     <div class="col s12 l4 center">
       <h3 class="factheadline">
-        sustainAbill CO2 Savings
+        CO2 Savings
       </h3>
       <h2 class="fact">
         120,12 t
@@ -40,7 +40,7 @@
   <!--Nav over the table-->
   <div id="content-header" class="row row-v-align">
     <div class="col s12 m6">
-      <h4 class="green-text">My Reciepts</h4>
+      <h4 class="green-text">My Receipts</h4>
     </div>
     <div class="col m6 hide-on-small-and-down ">
       <a href="#" class="right green-text">
@@ -72,13 +72,13 @@
               </td>
             </thead>
             <tbody>
-              <tr *ngFor="let reciepts of sortedlistOfReciepts">
+              <tr *ngFor="let receipts of sortedlistOfReciepts">
                 <td>
-                  {{ reciepts.date }}
+                  {{ receipts.date }}
                 </td>
-                <td>{{ reciepts.shop }}</td>
-                <td>{{ reciepts.category }}</td>
-                <td>{{ reciepts.spending }}</td>
+                <td>{{ receipts.shop }}</td>
+                <td>{{ receipts.category }}</td>
+                <td>{{ receipts.spending }}</td>
               </tr>
             </tbody>
           </table>
@@ -96,5 +96,4 @@
       </div>
     </div>
   </div>
-
 </div>

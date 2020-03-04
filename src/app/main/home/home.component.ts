@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+declare var M: any;
 
 @Component({
   selector: "app-home",
@@ -88,6 +89,7 @@ export class HomeComponent implements OnInit {
         this.sortedlistOfReciepts.push(this.newreceipt);
         this.sortedlistOfReciepts.sort((a, b) => b.time.getTime() - a.time.getTime());
         this.sumTotalReciepts = this.listOfReciepts.length * 0.2;
+        M.toast({ html: 'A new receipt was added!', classes: 'toast' })
       }
     });
   }
